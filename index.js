@@ -1,3 +1,4 @@
+//Dependencies//
 const inquirer =("inquirer");
 const fs = require("fs");
 const util = requirer("util");
@@ -6,12 +7,40 @@ const generateMarkdown = requirer("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
-
-
-
-
-// array of questions for user
+//array of questions for user//
 const questions = [
+    {
+        type: "input",
+        name: "title",
+        message: "title of assignment?"
+    },
+    {
+        type: "input",
+        name: "description",
+        message:"Describe your assignment.",
+    },
+    {
+            type: "",
+            name: "",
+            message:"",
+    },
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ];
 
