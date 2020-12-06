@@ -27,6 +27,11 @@ const questions = [
     {
         type: "input",
         name: "usage",
+        message:"PLease enter the usage information for the assignment.",
+    },
+    {
+        type: "input",
+        name: "usage",
         message:"Please describe the contributions guidelines needed for your assignment.",
     },
     {
