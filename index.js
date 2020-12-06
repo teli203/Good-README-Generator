@@ -17,16 +17,39 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message:"Describe your assignment.",
+        message:"Please describe your assignment.",
     },
     {
-            type: "",
-            name: "",
-            message:"",
+        type: "input",
+        name: "installation",
+        message:"Please describe the installation process for your assignment.",
     },
-
-
-    
+    {
+        type: "input",
+        name: "usage",
+        message:"Please describe the contributions guidelines needed for your assignment.",
+    },
+    {
+        type: "list",
+        name: "license",
+        message:"Please choose a license for the assignment.",
+        choices: ["AGPL", "Apache", "GNU", "LGPL", "MIT", "Unlicensed", "None"]
+    },
+    {
+        type: "input",
+        name: "testing",
+        message:"Please enter the testing instructions for the assignment",
+    },
+    {
+        type: "input",
+        name: "username",
+        message:"Please enter your github user name.",
+    },
+    {
+        type: "input",
+        name: "email",
+        message:"Please enter your email address.",
+    },
 
 
 
