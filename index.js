@@ -54,32 +54,25 @@ const questions = [
         type: "input",
         name: "email",
         message:"Please enter your email address.",
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    },    
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
+// function to ask the user questions//
+function promptUser() {
+    return inquirer.prompt([questions]);
 }
 
-// function to initialize program
-function init() {
+// function to initialize program//
+async function init() {
+    try {
+        const data = await promptUser();
+        const md = generateMarkdown(data);
 
+    }
+    catch (err) {
+        console.log(err);
+    }     
 }
 
-// function call to initialize program
+// function call to initialize program//
 init();
