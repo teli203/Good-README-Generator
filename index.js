@@ -46,7 +46,7 @@ const questions = [
         type: "list",
         name: "license",
         message:"Please choose a license for the assignment.",
-        choices: ["AGPL", "Apache", "GNU", "LGPL", "MIT", "Unlicensed", "None"]
+        choices: ["Apache", "Boost", "BSD", "GNU", "IBM","ISC", "MIT", "Mozilla", "Unlicensed",]
     },
 
     {
@@ -71,7 +71,7 @@ const questions = [
 
 // function to ask the user questions//
 function promptUser() {
-    return inquirer.prompt([questions]);
+    return inquirer.prompt([...questions]);
 }
 
 // function to initialize program//
